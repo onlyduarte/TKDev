@@ -1,0 +1,317 @@
+:root{
+    --spanpadrão: rgb(92, 148, 52);
+}
+ 
+
+/*.titulo{
+    font-family: 'quicksandbold';
+    color: white;
+    font-weight: bold;
+    font-size: clamp(1.7em, 2em +3vw, 2.3em);
+}*/
+.titulo-secundario{
+    font-family: 'quicksandbold';
+    color: white;
+    font-weight: 600;
+    font-size: clamp(1.5em, 4em + 3vw, 4.2em);
+    margin-right: 10%;
+}
+.text{
+    font-size: clamp(1.3em, 4em + 3vw, 1.6em);
+    font-family: 'quicksandregular';
+    font-weight: 200;
+}
+#formatoparagrafo{
+    font-size: 1.6em;
+    font-family: 'quicksandregular';
+}
+.paragrafo{
+    font-family: 'quicksandregular';
+    color: white;
+    font-weight: 200;
+    font-size: 1.5em;
+}
+*{
+    
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body
+{
+    /* height: 100vh; */
+    background: linear-gradient(to bottom, rgb(26, 84, 50), rgb(18, 37, 18));
+    font-size: 100%;
+    color: white;
+    margin: 0;
+   
+}
+
+header{
+    position: relative;
+    padding: 0 2rem;
+    margin-top: 150px;
+    margin-top: 25px;
+    margin-left: 40px; /*Para fixar tudo no meio*/
+    margin-right: 40px;
+}
+
+.neruslogo{
+    display: flex;
+    justify-content: start;
+    width: 200px;
+    height: 70px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+a:hover{
+    color: #5c9434;
+}
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .neruslogo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+.navbar .toggle_btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.action_btn{
+    background-color: #5c9434;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+.action_btn:hover{
+    scale: 1.05;
+    color: #fff;
+}
+.action_btn:active{
+    scale: 0.95;
+}
+#cabecalho-menu{
+    display:flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-right: 35%;
+    padding: 15px;
+}
+#cabecalho-menu a{
+    text-decoration: none;
+}
+#cabecalho-menu2 a{
+    text-decoration: none;
+}
+.cabecalho-menu-item{
+    font-family: 'quicksandbold';
+    color: white;
+    font-weight: 400;
+    font-size: 26px;
+}
+#cabecalho-menu2{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding: 15px;
+
+}
+.cabecalho-menu-item2{
+    font-family: 'quicksandbold';
+    color: white;
+    font-weight: 400;
+    font-size: 26px;
+}
+#primeiranav{
+  display: flex;
+align-items: flex-start;
+    
+}
+main{
+    margin-top: 100px;
+    padding: 0px;
+}
+.conteudo-principal{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 150px;
+    margin-top: 25px;
+    margin-left: 40px; /*Para fixar tudo no meio*/
+    margin-right: 40px;
+    padding: 20px;
+    
+}
+
+.primeiro-conteudo > h1{
+    font-size: clamp(1.5em, 4.5em + 7vw, 5.8em);
+    line-height: 10px;
+    font-family: 'quicksandbold'
+    
+}
+
+.primeiro-conteudo > p{
+    width: 71%;
+    line-height: 25px;
+    font-size: clamp(1em, 1.5em + 1vw, 1.5em);
+    font-family: 'quicksandbold';
+    font-weight: 400;
+    margin-top: 1.5rem;
+}
+.nerus-imagem{
+    /* position: relative;
+    top: -80px;
+    margin-right: 10%; */
+    display: flex;
+    justify-content: left;
+    height: 550px;
+    width: auto;
+    
+ 
+}
+
+span{
+    color:var(--spanpadrão);
+}
+
+#submit{
+    font-family: 'robotob';
+    font-size: 17px;
+    height: 50px;
+    width: 19%;
+    color:white;
+    background-color:  #5c9434;
+    border-radius: 9px;
+    margin-top: 15px;
+    padding: 15px;
+    border: none;
+}
+#submit:hover{
+    cursor: pointer;
+    
+}
+#conteudo-secundario{
+display: flex;
+flex-direction: column;
+background: linear-gradient(to bottom, rgb(33, 68, 38));
+margin-top: 10%;
+width: 0 auto;
+height: 0 auto;
+
+}
+.conteudo-secundario-titulo{
+    font-family: 'quicksandbold';
+    font-size: clamp(1.0em, 2em + 3vw, 2.0em);
+    font-weight: bold;
+}
+.conteudo-secundario-paragrafo{
+    font-family: 'quicksandregular';
+    font-size: clamp(1.3em, 1.6em + 1vw, 1.6em);
+    font-weight: 400;
+}
+.conteudo-secundario-p1{
+text-align: center;
+   margin: auto;
+   margin-bottom: 8%;
+}
+
+.conteudo-secundario-paragrafo{
+    width: 40%;
+    text-align: center;
+    margin: auto;
+
+}
+.conteudo-secundario-p2{
+display: flex;
+flex-direction: flex;
+justify-content: flex-start;
+margin-left: 5%;
+margin-right: 5%;
+margin-bottom: 10%;
+
+}
+.conteudo-secundario-p3{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    max-width: 700px;
+    margin-left: 15%; 
+    margin-top: 8%;
+    width: 40%;
+
+}
+
+.conteudo-informativo-3{
+    width: auto;
+    height: 1001px;
+    display: flex;
+    flex-direction: row;
+    background-color: #9FE870;
+    align-items: center;
+}
+.conteudo-informativo-p3{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    max-width: 700px;
+    margin-right: 0%;
+    margin-left: 15%;   
+}
+.titulo-conteudo-informativo{
+    font-family: 'quicksandbold';
+    color: white;
+    font-weight: 600;
+    font-size: clamp(2.7em, 4em + 3vw, 4.5em);
+}
+#gif{
+    border-radius: 60px;
+}
+.git-p3{
+margin-left: 10%;
+}
+.subtitulo{
+    font-family: 'quicksandregular';
+    font-size: clamp(1.3em, 1.5em + 1vw, 1.9em);
+    font-weight: 400;  
+}
+.text-p3{
+    display: flex;
+    flex-direction: column;
+}
+.text-p3 > p{
+    width: 100%;
+    
+}
+
+
+

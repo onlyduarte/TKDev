@@ -1,0 +1,86 @@
+@media screen and (max-width:1600px){
+header{
+    flex-direction: column;
+}
+main{
+    margin: 0 auto;
+    flex-direction: column;
+}
+aside{
+    margin-top: 30px;
+}
+.text > h1{
+    font-size: 38px;
+}
+.text > p{
+    font-size: 23px;
+}
+form{
+    width: 80%;
+}
+article > img{
+width: 360px;
+    
+}
+
+#primeiranav{
+    margin-top: 25px;
+    flex-direction: column;
+    font-size: 15px;
+}
+#segundanav{
+    font-size: 15px;
+}
+#submit{
+    width: 40%;
+    font-size: 17px;
+}
+}
+/* RESPONSIVIDADE NAVBAR */
+@media (max-width: 992px){
+    .navbar .links,
+    .navbar .action_btn{
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+}
+/* DROPDOWN MENU */
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu.open{
+    height: 240px;
+}
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.dropdown_menu {
+    display: block;
+}
+@media (max-width: 576px){
+.dropdown_menu{
+    left: 2rem;
+    width: unset;
+}
+}
