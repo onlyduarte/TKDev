@@ -14,16 +14,30 @@
     color: white;
     font-weight: 600;
     font-size: clamp(1.5em, 4em + 3vw, 4.2em);
-    margin-right: 10%;
 }
-.text{
-    font-size: clamp(1.3em, 4em + 3vw, 1.6em);
+.text1{
+    font-size: clamp(1.2em, 1.3em + 1vw, 1.6em);
     font-family: 'quicksandregular';
-    font-weight: 200;
+    font-weight: 600;
+    color: white;
 }
-#formatoparagrafo{
-    font-size: 1.6em;
+.text2{
+    font-size: clamp(1.2em, 1.3em + 1vw, 1.6em);
     font-family: 'quicksandregular';
+    font-weight: 600;
+    color: #214426;
+}
+.subtitulo1{
+    font-family: 'quicksandregular';
+    font-size: clamp(1.3em, 1.5em + 1vw, 1.9em);
+    font-weight: 600;  
+    color: white;
+}
+.subtitulo2{
+    font-family: 'quicksandregular';
+    font-size: clamp(1.3em, 1.5em + 1vw, 1.9em);
+    font-weight: 600;  
+    color: #214426;
 }
 .paragrafo{
     font-family: 'quicksandregular';
@@ -31,8 +45,9 @@
     font-weight: 200;
     font-size: 1.5em;
 }
+
 *{
-    
+
     text-decoration: none;
     box-sizing: border-box;
 }
@@ -40,7 +55,7 @@
 body
 {
     /* height: 100vh; */
-    background: linear-gradient(to bottom, rgb(26, 84, 50), rgb(18, 37, 18));
+    background: linear-gradient(to bottom, #1a5432, rgb(18, 37, 18));
     font-size: 100%;
     color: white;
     margin: 0;
@@ -66,9 +81,11 @@ li{
     list-style: none;
 }
 a{
+    font-family: 'quicksandbold';
+    font-size: clamp(0.4em, 1.1em + 1vw, 0.1em);
     text-decoration: none;
     color: #fff;
-    font-size: 1rem;
+   
 }
 a:hover{
     color: #5c9434;
@@ -84,14 +101,13 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.navbar .neruslogo a{
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 50px;
+    
 }
 .navbar .links{
     display: flex;
     gap: 2rem;
+ 
 }
 .navbar .toggle_btn{
     color: #fff;
@@ -105,15 +121,15 @@ header{
     padding: 0.5rem 1rem;
     border: none;
     outline: none;
-    border-radius: 20px;
-    font-size: 0.8rem;
+    border-radius: 15px;
+    font-size: clamp(0.3em, 0.5em + 1vw, 0.4em);
     font-weight: bold;
     cursor: pointer;
     transition: scale 0.2 ease;
 }
 .action_btn:hover{
     scale: 1.05;
-    color: #fff;
+    color: #1a5432;
 }
 .action_btn:active{
     scale: 0.95;
@@ -124,12 +140,6 @@ header{
     gap: 25px;
     margin-right: 35%;
     padding: 15px;
-}
-#cabecalho-menu a{
-    text-decoration: none;
-}
-#cabecalho-menu2 a{
-    text-decoration: none;
 }
 .cabecalho-menu-item{
     font-family: 'quicksandbold';
@@ -170,13 +180,17 @@ main{
     margin-left: 40px; /*Para fixar tudo no meio*/
     margin-right: 40px;
     padding: 20px;
+    padding-bottom: 10%;
+   
     
 }
 
 .primeiro-conteudo > h1{
-    font-size: clamp(1.5em, 4.5em + 7vw, 5.8em);
+ 
+    font-size: clamp(2.5em, 4.5em + 3vw, 5.8em);
     line-height: 10px;
     font-family: 'quicksandbold'
+    
     
 }
 
@@ -211,7 +225,7 @@ span{
     width: 19%;
     color:white;
     background-color:  #5c9434;
-    border-radius: 9px;
+    border-radius: 15px;
     margin-top: 15px;
     padding: 15px;
     border: none;
@@ -223,8 +237,8 @@ span{
 #conteudo-secundario{
 display: flex;
 flex-direction: column;
-background: linear-gradient(to bottom, rgb(33, 68, 38));
-margin-top: 10%;
+background: linear-gradient(to bottom, #214426);
+margin-top: 3%;
 width: 0 auto;
 height: 0 auto;
 
@@ -238,6 +252,9 @@ height: 0 auto;
     font-family: 'quicksandregular';
     font-size: clamp(1.3em, 1.6em + 1vw, 1.6em);
     font-weight: 400;
+    width: 40%;
+    text-align: center;
+    margin: auto;
 }
 .conteudo-secundario-p1{
 text-align: center;
@@ -245,35 +262,43 @@ text-align: center;
    margin-bottom: 8%;
 }
 
-.conteudo-secundario-paragrafo{
-    width: 40%;
-    text-align: center;
-    margin: auto;
-
-}
 .conteudo-secundario-p2{
 display: flex;
 flex-direction: flex;
 justify-content: flex-start;
-margin-left: 5%;
-margin-right: 5%;
+margin-left: 10%;
 margin-bottom: 10%;
 
+}
+.titulo-conteudo-informativo-p1{
+    width: 50%;
+   margin-right: 10px;
+}
+.text-p1{
+    margin-top: 5%;
+    margin-right: 60px;
+    width: 60%;
+    padding: 10px;
+}
+.text-p2{
+    margin-top: 5%;
+    margin-right: 60px;
+    width: 60%;
 }
 .conteudo-secundario-p3{
     display: flex;
     flex-direction: row;
     margin: 0;
-    max-width: 700px;
-    margin-left: 15%; 
+    margin-left: 8%; 
     margin-top: 8%;
-    width: 40%;
+    width: 100%;
+    margin-right: 60px;
 
 }
 
 .conteudo-informativo-3{
     width: auto;
-    height: 1001px;
+    height: 1000px;
     display: flex;
     flex-direction: row;
     background-color: #9FE870;
@@ -285,24 +310,20 @@ margin-bottom: 10%;
     margin: 0;
     max-width: 700px;
     margin-right: 0%;
-    margin-left: 15%;   
+    margin-left: 12%;  
+    width: 100%; 
 }
-.titulo-conteudo-informativo{
+.titulo-conteudo-informativo-p2{
     font-family: 'quicksandbold';
-    color: white;
+    color: #214426;
     font-weight: 600;
-    font-size: clamp(2.7em, 4em + 3vw, 4.5em);
+    font-size: clamp(1.5em, 4em + 3vw, 4.2em);
 }
 #gif{
     border-radius: 60px;
 }
 .git-p3{
 margin-left: 10%;
-}
-.subtitulo{
-    font-family: 'quicksandregular';
-    font-size: clamp(1.3em, 1.5em + 1vw, 1.9em);
-    font-weight: 400;  
 }
 .text-p3{
     display: flex;
