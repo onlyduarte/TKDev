@@ -192,6 +192,7 @@ main{
 .primeiro-conteudo > h1{
  
     font-size: clamp(2.5em, 4.5em + 3vw, 5.8em);
+    padding-bottom: 80px;
     line-height: 10px;
     font-family: 'quicksandbold'
     
@@ -217,7 +218,10 @@ main{
     
  
 }
-
+.center{
+    text-align: center;
+    background-color: #9FE870;
+}
 span{
     color:var(--spanpadrão);
 }

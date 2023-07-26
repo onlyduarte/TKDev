@@ -1,76 +1,53 @@
 
-
-:root {
-    --background: #261E5A;
+.backg{
+    background: #9fe870;
 }
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
 
 .background {
-    height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: var(--background);
+    display: grid;
+    place-items: center;
+    height: 100vh;
 }
 
-.container {
+.gallery {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 8px 0px;
-    margin: 4px;
-    gap: 8px;
-    max-height: 430px; 
-    max-width: 388px;
-    transition: all 0.2s;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
+    left: calc(50% - 330px);
 }
 
 .card {
-    padding: 100px;
-    min-width: 380px;
-    min-height: 400px;
-    color: white;
-    display: flex;
+    position: relative;
+    left: 0px;
+    width: 470px;
+    height: 600px;
+    background-color: var(--background-card);
     border-radius: 8px;
-    font-size: 48px;
-    transition: all 0.2s;
-    scroll-snap-align: start;
+    transition: 1s ease-in-out;
+    overflow: hidden;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
 }
 
-.card figure {
-    margin: 0px;
-    border-radius: 8px;
-    cursor: move;
-    cursor: grab;
+.card:not(:first-child) {
+    margin-left: -45px;
 }
 
+.card:hover {
+    transform: translateY(-16px);
+    font-weight: bold;
+    cursor: pointer;
+}
 
-.card figure:active {
-    cursor: grabbing;
+.card:hover ~ .card {
+    left: 55px;
 }
 
 .card img {
+    height: 600px;
     object-fit: cover;
-    width: 100%;
-    height: 100%;
-    border-radius: 16px;
+    border-radius: 4px;
 }
-
-.container::-webkit-scrollbar {
-    width: 8px;
-}
-
-.container::-webkit-scrollbar-track {
-    background: white;
-    border-radius: 6px;
-}
-
-.container::-webkit-scrollbar-thumb {
-    background: #FF9950;
-    border-radius: 5px;
-}
-
-.container::-webkit-scrollbar-thumb:hover {
-    background: #FF9950;
-} 
