@@ -51,3 +51,7 @@
     object-fit: cover;
     border-radius: 4px;
 }
+.backg h1{
+    position: relative;
+    top: 50px;
+}
