@@ -13,13 +13,15 @@
     font-family: 'quicksandbold';
     color: white;
     font-weight: 600;
-    font-size: clamp(1.5em, 4em + 3vw, 4.2em);
+    width: 10px;
+    font-size: clamp(1.5em, 2em + 1vw, 3em);
 }
 .text1{
-    font-size: clamp(1.2em, 1.3em + 1vw, 1.6em);
+    font-size: clamp(1.2em, 1.3em + 1vw, 2em);
     font-family: 'quicksandregular';
     font-weight: 600;
-    color: white;
+
+    padding-left: 30px;
 }
 .text2{
     font-size: clamp(1.2em, 1.3em + 1vw, 1.6em);
@@ -32,10 +34,11 @@
     font-size: clamp(1.3em, 1.5em + 1vw, 1.9em);
     font-weight: 600;  
     color: white;
+    padding-left: 30px;
 }
 .subtitulo2{
     font-family: 'quicksandregular';
-    font-size: clamp(1.3em, 1.5em + 1vw, 1.9em);
+    font-size: clamp(1.3em, 1.5em + 1vw, 2.2em);
     font-weight: 600;  
     color: #214426;
 }
@@ -55,7 +58,7 @@
 body
 {
     /* height: 100vh; */
-    background: linear-gradient(to bottom, #1a5432, rgb(18, 37, 18));
+    background: linear-gradient(to bottom, #1a5432, rgb(13, 27, 13));
     font-size: 100%;
     color: white;
     margin: 0;
@@ -70,7 +73,10 @@ header{
     margin-left: 40px; /*Para fixar tudo no meio*/
     margin-right: 40px;
 }
-
+.conteudo-sec{
+    position: relative;
+    top: 80px;
+}
 .neruslogo{
     display: flex;
     justify-content: start;
@@ -92,10 +98,6 @@ a{
 }
 a:hover{
     color: #5c9434;
-}
-header{
-    position: relative;
-    padding: 0 2rem;
 }
 .navbar{
     width: 100%;
@@ -205,7 +207,7 @@ main{
     font-size: clamp(1em, 1.5em + 1vw, 1.5em);
     font-family: 'quicksandbold';
     font-weight: 400;
-    margin-top: 1.5rem;
+    margin-top: -1.5rem;
 }
 .nerus-imagem{
     /* position: relative;
@@ -213,7 +215,7 @@ main{
     margin-right: 10%; */
     display: flex;
     justify-content: left;
-    height: 550px;
+    height: 500px;
     width: auto;
     
  
@@ -253,8 +255,10 @@ height: 0 auto;
 }
 .conteudo-secundario-titulo{
     font-family: 'quicksandbold';
-    font-size: clamp(1.0em, 2em + 3vw, 2.0em);
+    font-size: clamp(1.0em, 2em + 3vw, 3.0em);
     font-weight: bold;
+    
+    
 }
 .conteudo-secundario-paragrafo{
     font-family: 'quicksandregular';
@@ -263,30 +267,43 @@ height: 0 auto;
     width: 40%;
     text-align: center;
     margin: auto;
+    
 }
 .conteudo-secundario-p1{
 text-align: center;
    margin: auto;
-   margin-bottom: 8%;
+   margin-bottom: 10%;
 }
 
 .conteudo-secundario-p2{
 display: flex;
 flex-direction: flex;
-justify-content: flex-start;
 margin-left: 10%;
 margin-bottom: 10%;
 
+
 }
 .titulo-conteudo-informativo-p1{
-    width: 50%;
-   margin-right: 10px;
-}
-.text-p1{
-    margin-top: 5%;
-    margin-right: 60px;
-    width: 60%;
+    font-family: 'quicksandbold';
+    width: 100px;
+    height: auto;
     padding: 10px;
+    padding-right: 500px;
+    padding-left: 50px;
+    opacity: 1;
+    align-items: center;
+    color: white;
+    display: flex;
+    font-size: 2.8em;
+    
+}
+.conteudo-p1{
+    display: block;
+    margin-top: 12%;
+    margin-right: 60px;
+    width: 400px;
+    align-items: center;
+    
 }
 .text-p2{
     margin-top: 5%;
@@ -295,12 +312,8 @@ margin-bottom: 10%;
 }
 .conteudo-secundario-p3{
     display: flex;
-    flex-direction: row;
-    margin: 0;
-    margin-left: 8%; 
-    margin-top: 8%;
-    width: 100%;
-    margin-right: 60px;
+    flex-direction: row; 
+    margin-right: 0%;
 
 }
 
@@ -311,6 +324,7 @@ margin-bottom: 10%;
     flex-direction: row;
     background-color: #9FE870;
     align-items: center;
+    padding-right: 10%;
 }
 .conteudo-informativo-p3{
     display: flex;
@@ -318,14 +332,15 @@ margin-bottom: 10%;
     margin: 0;
     max-width: 700px;
     margin-right: 0%;
-    margin-left: 12%;  
+    margin-left: 15%;  
     width: 100%; 
 }
 .titulo-conteudo-informativo-p2{
     font-family: 'quicksandbold';
     color: #214426;
     font-weight: 600;
-    font-size: clamp(1.5em, 4em + 3vw, 4.2em);
+    font-size: clamp(1.5em, 4em + 3vw, 5.9em);
+    opacity: 1;
 }
 #gif{
     border-radius: 60px;
@@ -341,6 +356,20 @@ margin-left: 10%;
     width: 100%;
     
 }
+.plant2{
+    width: 70px;
+    height: 70px;
+    
+}
+.icon{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 5%;
+}
 
-
-
+.icone{
+    height: 1500px ;
+    width: 1500px;
+}
