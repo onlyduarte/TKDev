@@ -1,24 +1,21 @@
-
 footer {
+    display: flex;
     color: white;
     overflow: hidden;
-    display: flex;
     flex-direction: row;
     width: auto;
     height: 420px;
-    left: 0px;
-    right: 0px;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-left: 0%;
-    /* bottom: 0px; */
+    bottom: 0px;
 }
 .footer-top-wrapper {
     display: flex;
     margin: 0;
     padding: 15px;
-    min-height: 160px;
-    width: 100px;
-    margin-right: 530px;
+    /* min-height: 160px; */
+    /* width: 100px; */
+    /* margin-right: 530px; */
 }
 .footer-mid{
     font-family: 'quicksandbold';
@@ -34,7 +31,7 @@ footer {
 .footer-mid p{
     font-family: 'quicksandbold';
     font-weight: 200;
-    font-size: 1.3em;
+    font-size: 1.2em;
     width: 580px;
 }
 .footer-right{
@@ -103,6 +100,14 @@ menu li {
     text-align: center;
     width: 200px;
     margin: 0;
+}
+footer .footer-bottom {
+    position: relative;
+    left: 250px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 .footer-bottom > small {
